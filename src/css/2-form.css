@@ -1,0 +1,78 @@
+
+body {
+    background-color: rgb(109, 233, 231);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2e2f42;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  }
+  
+  .feedback-form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 24px;
+    gap: 8px;
+    width: 408px;
+    height: 248px;
+  }
+  .label-email {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .input-email {
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #808080;
+    padding-left: 8px;
+  }
+  .input-email:hover,
+  .input-email:focus {
+    border: 1px solid #000;
+  }
+  
+  .label-message {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  .textarea-message {
+    resize: none;
+    height: 80px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #808080;
+    padding-left: 8px;
+  }
+  .textarea-message:hover,
+  .textarea-message:focus {
+    border: 1px solid #000;
+  }
+  
+  .button-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 95px;
+    height: 40px;
+    background-color: #4e75ff;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    transition: 250ms ease background-color;
+  }
+  .button-submit:hover,
+  .button-submit:focus {
+    background-color: #6c8cff;
+  }
+  

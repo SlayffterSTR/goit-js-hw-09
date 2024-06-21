@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <form class="feedback-form" autocomplete="off">
-        <label class="email-form">
-          Email
-          <input type="email" name="email" autofocus />
-        </label>
-        <label class="message-form">
-          Message
-          <textarea name="message" rows="8"></textarea>
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-      <script src="./js/2-form.js"></script>
-</body>
+      <label class="label-email">
+        Email
+        <input type="email" class="input-email" name="email" autofocus />
+      </label>
+      <label class="label-message">
+        Message
+        <textarea name="message" class="textarea-message" rows="8"></textarea>
+      </label>
+      <button type="submit" class="button-submit">Submit</button>
+    </form>
+    <script type="module" src="./js/2-form.js"></script>
+  </body>
 </html>

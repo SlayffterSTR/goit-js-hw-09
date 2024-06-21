@@ -30,3 +30,17 @@ function saveToLS(key, value) {
     }
   }
   
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+  
+    const { email, message } = e.target.elements;
+    if (email.value.trim() === '' || message.value.trim() === '') {
+      alert('Fill please all fields');
+      return;
+    }
+    console.log({ email: email.value.trim(), message: message.value.trim() });
+  
+    form.reset();
+  
+    localStorage.removeItem('feedback-form-state');
+  });
