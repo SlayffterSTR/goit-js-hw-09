@@ -1,8 +1,7 @@
-
-const form = document.querySelector('.feedback-form')
-console.log(form)
-
-
+const form = document.querySelector('.feedback-form');
+const input = document.querySelector('.input-email');
+const textarea = document.querySelector('.textarea-message');
+const btn = document.querySelector('.button-submit');
 
 form.addEventListener('input', () => {
     const formData = new FormData(form);
@@ -12,7 +11,6 @@ form.addEventListener('input', () => {
     saveToLS('email', name);
     saveToLS('message', message);
     saveToLS('userData', data);
-    
 })
 
 function saveToLS(key, value) {
@@ -20,7 +18,7 @@ function saveToLS(key, value) {
     localStorage.setItem(key, jsonData);
   }
   
-  function loadFromLS(key) {
+function loadFromLS(key) {
     const json = localStorage.getItem(key);
     try {
       const data = JSON.parse(json);
@@ -30,17 +28,17 @@ function saveToLS(key, value) {
     }
   }
   
-  form.addEventListener('submit', e => {
+ form.addEventListener('submit', e => {
     e.preventDefault();
-  
     const { email, message } = e.target.elements;
     if (email.value.trim() === '' || message.value.trim() === '') {
       alert('Fill please all fields');
       return;
     }
     console.log({ email: email.value.trim(), message: message.value.trim() });
-  
     form.reset();
-  
-    localStorage.removeItem('feedback-form-state');
+    localStorage.removeItem('feedback-form-state'); 
   });
+
+
+  
